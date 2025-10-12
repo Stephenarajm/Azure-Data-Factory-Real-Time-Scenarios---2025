@@ -1,0 +1,21 @@
+{
+	"name": "ds_ods",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_tgt1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "ods",
+				"fileSystem": "stevetgt"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

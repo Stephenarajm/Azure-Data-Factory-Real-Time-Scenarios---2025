@@ -1,0 +1,9 @@
+{
+	"name": "Steve-ADF",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "653c8d23-9740-4f13-9f1d-2282528bc4c5",
+		"tenantId": "e4b17ab4-6081-459e-a667-4c8ef9cb5271"
+	}
+}

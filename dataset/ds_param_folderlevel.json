@@ -1,0 +1,48 @@
+{
+	"name": "ds_param_folderlevel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_datalake",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_container": {
+				"type": "string"
+			},
+			"p_folder": {
+				"type": "string"
+			},
+			"p_filename": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Azure"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().p_filename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().p_folder",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().p_container",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
