@@ -10,6 +10,9 @@
 						"type": "DatasetReference"
 					},
 					"name": "source1"
+				},
+				{
+					"name": "source2"
 				}
 			],
 			"sinks": [
@@ -25,13 +28,23 @@
 					}
 				}
 			],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "lookup1"
+				}
+			],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     moveFiles: ['','processed'],",
 				"     format: 'parquet') ~> source1",
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> source2",
+				"source2 lookup(ERROR_FUNCTION('') == ERROR_FUNCTION(''),",
+				"     multiple: false,",
+				"     pickup: 'any',",
+				"     broadcast: 'auto')~> lookup1",
 				"source1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     format: 'parquet',",
