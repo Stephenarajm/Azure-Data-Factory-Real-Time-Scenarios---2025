@@ -134,7 +134,26 @@
 								"expression": {
 									"value": "@greater(formatDateTime(variables('temp_max_value'),'yyyyMMddHHmmss'),formatDateTime(activity('Get Metadata2').output.lastModified,'yyyyMMddHHmmss'))",
 									"type": "Expression"
-								}
+								},
+								"ifTrueActivities": [
+									{
+										"name": "Set variable2",
+										"type": "SetVariable",
+										"dependsOn": [],
+										"policy": {
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"variableName": "temp_max_value",
+											"value": {
+												"value": "@activity('Get Metadata2').output.lastModified",
+												"type": "Expression"
+											}
+										}
+									}
+								]
 							}
 						}
 					]
