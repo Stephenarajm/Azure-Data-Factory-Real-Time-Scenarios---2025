@@ -132,7 +132,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@greater(formatDateTime(variables('temp_max_value'),'yyyyMMddHHmmss'),formatDateTime(activity('Get Metadata2').output.lastModified,'yyyyMMddHHmmss'))",
+									"value": "@less(formatDateTime(activity('Get Metadata2').output.lastModified,'yyyyMMddHHmmss'), formatDateTime(variables('temp_max_value'),'yyyyMMddHHmmss'))",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
