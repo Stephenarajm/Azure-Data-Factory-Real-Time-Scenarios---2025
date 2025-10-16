@@ -1,12 +1,12 @@
 {
-	"name": "ds_source_secnario2",
+	"name": "ds_source_scenario2",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_src1",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
-			"name": "Azure Data Factory Real Time Scenarios - 2025/Secnario-2"
+			"name": "Azure Data Factory Real Time Scenarios - 2025/Scenario-2"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
