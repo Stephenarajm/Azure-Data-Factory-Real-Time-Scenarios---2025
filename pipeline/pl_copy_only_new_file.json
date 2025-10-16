@@ -70,6 +70,10 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Metadata source').output.childItems",
+						"type": "Expression"
+					},
 					"isSequential": true,
 					"activities": [
 						{
@@ -89,7 +93,9 @@
 									"referenceName": "ds_source_scenario2",
 									"type": "DatasetReference"
 								},
-								"fieldList": [],
+								"fieldList": [
+									"itemName"
+								],
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
 									"enablePartitionDiscovery": false
