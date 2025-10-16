@@ -81,8 +81,7 @@
 									}
 								},
 								"fieldList": [
-									"lastModified",
-									"itemName"
+									"lastModified"
 								],
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
@@ -108,7 +107,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@less(formatDateTime(activity('Get Metadata2').output.lastModified,'yyyyMMddHHmmss'), formatDateTime(variables('temp_max_value'),'yyyyMMddHHmmss'))",
+									"value": "@less(formatDateTime(variables('temp_max_value'),'yyyyMMddHHmmss'),formatDateTime(activity('Get Metadata2').output.lastModified,'yyyyMMddHHmmss'))",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
