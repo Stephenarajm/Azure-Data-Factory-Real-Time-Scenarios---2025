@@ -5,6 +5,9 @@
 			"referenceName": "ls_tgt1",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Testing"
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {

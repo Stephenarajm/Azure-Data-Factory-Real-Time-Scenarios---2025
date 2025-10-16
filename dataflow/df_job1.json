@@ -1,6 +1,9 @@
 {
 	"name": "df_job1",
 	"properties": {
+		"folder": {
+			"name": "Testing"
+		},
 		"type": "MappingDataFlow",
 		"typeProperties": {
 			"sources": [

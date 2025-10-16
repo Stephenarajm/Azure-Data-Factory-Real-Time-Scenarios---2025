@@ -5,6 +5,9 @@
 			"referenceName": "ls_src1",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Testing"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
