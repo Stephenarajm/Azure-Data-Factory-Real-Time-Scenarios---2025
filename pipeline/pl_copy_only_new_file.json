@@ -1,11 +1,29 @@
 {
 	"name": "pl_copy_only_new_file",
 	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableStaging": false
+				}
+			}
+		],
 		"folder": {
 			"name": "Azure Data Factory Real Time Scenarios - 2025/Secnario-2"
 		},
 		"annotations": [
-			"secnario-"
+			"secnario-2"
 		]
 	}
 }
