@@ -2,7 +2,9 @@
 	"name": "ls_tgt1",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
-		"annotations": [],
+		"annotations": [
+			"Secnario-1"
+		],
 		"type": "AzureBlobFS",
 		"typeProperties": {
 			"url": "https://velancovidreportingsa.dfs.core.windows.net/",
