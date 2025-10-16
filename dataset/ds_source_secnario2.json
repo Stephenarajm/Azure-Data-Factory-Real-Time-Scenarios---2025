@@ -1,0 +1,51 @@
+{
+	"name": "ds_source_secnario2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_src1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Azure Data Factory Real Time Scenarios - 2025/Secnario-2"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "raw_gold_data",
+				"container": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "2020",
+				"type": "String"
+			},
+			{
+				"name": "2021",
+				"type": "String"
+			},
+			{
+				"name": "2022",
+				"type": "String"
+			},
+			{
+				"name": "2023",
+				"type": "String"
+			},
+			{
+				"name": "Average gold reserves",
+				"type": "String"
+			}
+		]
+	}
+}
