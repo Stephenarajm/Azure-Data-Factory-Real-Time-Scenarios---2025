@@ -196,7 +196,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "v_temp",
-								"value": "@formatDateTime(activity('Get Metadata2').output.lastModified,'yyyyMMddHHmmss')"
+								"value": {
+									"value": "@formatDateTime(activity('Get Metadata2').output.lastModified,'yyyyMMddHHmmss')",
+									"type": "Expression"
+								}
 							}
 						},
 						{
@@ -290,7 +293,7 @@
 			}
 		},
 		"folder": {
-			"name": "Azure Data Factory Real Time Scenarios - 2025"
+			"name": "Azure Data Factory Real Time Scenarios - 2025/Secnario-1"
 		},
 		"annotations": [],
 		"lastPublishTime": "2025-10-12T18:03:34Z"
