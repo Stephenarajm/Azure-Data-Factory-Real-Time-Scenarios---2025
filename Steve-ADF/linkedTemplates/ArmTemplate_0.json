@@ -120,6 +120,9 @@
 					"referenceName": "ls_tgt1",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Testing"
+				},
 				"annotations": [],
 				"type": "Parquet",
 				"typeProperties": {
@@ -242,6 +245,9 @@
 					"referenceName": "ls_src1",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Testing"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -319,6 +325,9 @@
 					"referenceName": "ls_tgt1",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Testing"
+				},
 				"annotations": [],
 				"type": "Parquet",
 				"typeProperties": {
@@ -343,6 +352,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_src1",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Testing"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -420,6 +432,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_tgt1",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Testing"
 				},
 				"annotations": [],
 				"type": "Parquet",
@@ -1321,6 +1336,9 @@
 			"type": "Microsoft.DataFactory/factories/dataflows",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"folder": {
+					"name": "Testing"
+				},
 				"type": "MappingDataFlow",
 				"typeProperties": {
 					"sources": [
