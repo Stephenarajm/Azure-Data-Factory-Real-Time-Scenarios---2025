@@ -2,7 +2,9 @@
 	"name": "ls_src1",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
-		"annotations": [],
+		"annotations": [
+			"Secnario-1"
+		],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
 			"connectionString": "DefaultEndpointsProtocol=https;AccountName=velansa;EndpointSuffix=core.windows.net;",
