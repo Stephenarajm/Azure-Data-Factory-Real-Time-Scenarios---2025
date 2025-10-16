@@ -1,0 +1,11 @@
+{
+	"name": "pl_copy_only_new_file",
+	"properties": {
+		"folder": {
+			"name": "Azure Data Factory Real Time Scenarios - 2025/Secnario-2"
+		},
+		"annotations": [
+			"secnario-"
+		]
+	}
+}
