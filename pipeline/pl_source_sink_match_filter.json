@@ -113,8 +113,6 @@
 						{
 							"name": "Copy data1",
 							"type": "Copy",
-							"state": "Inactive",
-							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [],
 							"policy": {
 								"timeout": "0.12:00:00",
@@ -134,7 +132,6 @@
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
 										"recursive": true,
-										"wildcardFolderPath": "raw_gold_data",
 										"wildcardFileName": {
 											"value": "@item().name",
 											"type": "Expression"
@@ -149,10 +146,7 @@
 									"type": "DelimitedTextSink",
 									"storeSettings": {
 										"type": "AzureBlobStorageWriteSettings",
-										"copyBehavior": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
+										"copyBehavior": "PreserveHierarchy"
 									},
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
