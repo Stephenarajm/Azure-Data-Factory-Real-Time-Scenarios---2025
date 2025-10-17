@@ -139,7 +139,13 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Metadata source').output.exists",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"folder": {
