@@ -123,15 +123,9 @@
 				}
 			},
 			{
-				"name": "Filter1",
-				"type": "Filter",
+				"name": "ForEach1",
+				"type": "ForEach",
 				"dependsOn": [
-					{
-						"activity": "Copy data1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					},
 					{
 						"activity": "Get Metadata source",
 						"dependencyConditions": [
@@ -139,13 +133,7 @@
 						]
 					}
 				],
-				"userProperties": [],
-				"typeProperties": {
-					"items": {
-						"value": "@activity('Get Metadata source').output.exists",
-						"type": "Expression"
-					}
-				}
+				"userProperties": []
 			}
 		],
 		"folder": {
