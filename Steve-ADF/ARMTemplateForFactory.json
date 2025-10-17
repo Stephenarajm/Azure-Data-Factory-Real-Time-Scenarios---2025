@@ -2193,7 +2193,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/CDC')]",
+			"name": "[concat(parameters('factoryName'), '/CDCTEST')]",
 			"type": "Microsoft.DataFactory/factories/adfcdcs",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -2339,7 +2339,7 @@
 					{
 						"TargetEntities": [
 							{
-								"name": "target/raw_gold_data/raw_gold_data",
+								"name": "target/CDC",
 								"properties": {
 									"schema": [],
 									"dslConnectorProperties": [
@@ -2353,7 +2353,7 @@
 										},
 										{
 											"name": "folderPath",
-											"value": "raw_gold_data/raw_gold_data"
+											"value": "CDC"
 										}
 									]
 								}
@@ -2400,7 +2400,7 @@
 						},
 						"DataMapperMappings": [
 							{
-								"targetEntityName": "target/raw_gold_data/raw_gold_data",
+								"targetEntityName": "target/CDC",
 								"sourceEntityName": "source/raw_gold_data",
 								"sourceConnectionReference": {
 									"connectionName": "ls_src1",
@@ -2417,11 +2417,10 @@
 				"Policy": {
 					"recurrence": {
 						"frequency": "Minute",
-						"interval": 1
+						"interval": 15
 					},
 					"mode": "Microbatch"
 				},
-				"status": "Stopped",
 				"allowVNetOverride": false
 			},
 			"dependsOn": [
