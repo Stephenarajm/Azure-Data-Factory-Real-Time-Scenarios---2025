@@ -82,6 +82,10 @@
 					"items": {
 						"value": "@activity('Get Metadata source').output.childItems",
 						"type": "Expression"
+					},
+					"condition": {
+						"value": "@not(contains(activity('Get Metadata sink').output.childItems,item() ))",
+						"type": "Expression"
 					}
 				}
 			}
