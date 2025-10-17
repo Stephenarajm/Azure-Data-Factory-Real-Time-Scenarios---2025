@@ -1,5 +1,5 @@
 {
-	"name": "pl_copy_only_new_file",
+	"name": "pl_source_sink_match",
 	"properties": {
 		"activities": [
 			{
