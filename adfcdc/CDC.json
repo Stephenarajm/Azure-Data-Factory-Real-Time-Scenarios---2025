@@ -221,7 +221,7 @@
 		"Policy": {
 			"recurrence": {
 				"frequency": "Minute",
-				"interval": 1
+				"interval": 15
 			},
 			"mode": "Microbatch"
 		},
