@@ -143,7 +143,7 @@
 			{
 				"TargetEntities": [
 					{
-						"name": "target/raw_gold_data/raw_gold_data",
+						"name": "target/raw_gold_data/CDC",
 						"properties": {
 							"schema": [],
 							"dslConnectorProperties": [
@@ -157,7 +157,7 @@
 								},
 								{
 									"name": "folderPath",
-									"value": "raw_gold_data/raw_gold_data"
+									"value": "raw_gold_data/CDC"
 								}
 							]
 						}
@@ -204,7 +204,7 @@
 				},
 				"DataMapperMappings": [
 					{
-						"targetEntityName": "target/raw_gold_data/raw_gold_data",
+						"targetEntityName": "target/raw_gold_data/CDC",
 						"sourceEntityName": "source/raw_gold_data",
 						"sourceConnectionReference": {
 							"connectionName": "ls_src1",
@@ -225,7 +225,7 @@
 			},
 			"mode": "Microbatch"
 		},
-		"status": "Stopped",
+		"status": "Starting",
 		"allowVNetOverride": false
 	}
 }
