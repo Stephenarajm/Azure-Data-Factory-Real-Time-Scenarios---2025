@@ -121,11 +121,7 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [
-								{
-									"name": "filenmae"
-								}
-							],
+							"userProperties": [],
 							"typeProperties": {
 								"source": {
 									"type": "DelimitedTextSource",
@@ -146,7 +142,10 @@
 									"type": "DelimitedTextSink",
 									"storeSettings": {
 										"type": "AzureBlobStorageWriteSettings",
-										"copyBehavior": "PreserveHierarchy"
+										"copyBehavior": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
 									},
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
