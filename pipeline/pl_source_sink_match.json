@@ -94,7 +94,7 @@
 				}
 			},
 			{
-				"name": "Get Metadata source_copy1",
+				"name": "Get Metadata sink",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
@@ -107,7 +107,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "ds_source_scenario2",
+						"referenceName": "ds_target_scenario2",
 						"type": "DatasetReference"
 					},
 					"fieldList": [

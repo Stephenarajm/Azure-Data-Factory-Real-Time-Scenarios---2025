@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "scenario2",
+				"folderPath": "raw_gold_data",
 				"container": "target"
 			},
 			"columnDelimiter": ",",
