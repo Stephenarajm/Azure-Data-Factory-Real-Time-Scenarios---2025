@@ -63,7 +63,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@contains(activity('Get Metadata sink').output.childItems,activity('Get Metadata source').output.childItems)",
+									"value": "@contains(activity('Get Metadata source').output.childItems,activity('Get Metadata sink').output.childItems)",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
