@@ -45,7 +45,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata sink').output.childItems",
+						"value": "@activity('Get Metadata source').output.childItems",
 						"type": "Expression"
 					},
 					"isSequential": true,
