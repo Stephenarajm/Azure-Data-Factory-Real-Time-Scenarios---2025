@@ -146,7 +146,10 @@
 									"type": "DelimitedTextSink",
 									"storeSettings": {
 										"type": "AzureBlobStorageWriteSettings",
-										"copyBehavior": "FlattenHierarchy"
+										"copyBehavior": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
 									},
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
@@ -173,13 +176,7 @@
 							"outputs": [
 								{
 									"referenceName": "ds_target_scenario2",
-									"type": "DatasetReference",
-									"parameters": {
-										"filenmae": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							]
 						}
