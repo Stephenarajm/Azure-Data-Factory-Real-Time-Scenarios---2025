@@ -171,7 +171,13 @@
 							"outputs": [
 								{
 									"referenceName": "ds_target_scenario2",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filenmae": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
