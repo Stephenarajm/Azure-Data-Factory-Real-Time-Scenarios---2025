@@ -13,7 +13,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "products-10000.csv",
 				"container": "stevesrc"
 			},
 			"columnDelimiter": ",",

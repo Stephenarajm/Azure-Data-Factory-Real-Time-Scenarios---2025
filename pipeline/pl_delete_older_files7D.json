@@ -83,7 +83,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "ds_source_scenario2",
+						"referenceName": "ds_product_src1",
 						"type": "DatasetReference"
 					},
 					"logStorageSettings": {
@@ -91,7 +91,7 @@
 							"referenceName": "ls_src1",
 							"type": "LinkedServiceReference"
 						},
-						"path": "source/raw_gold_data"
+						"path": "stevesrc"
 					},
 					"enableLogging": true,
 					"storeSettings": {
