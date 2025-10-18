@@ -90,7 +90,8 @@
 						"linkedServiceName": {
 							"referenceName": "ls_src1",
 							"type": "LinkedServiceReference"
-						}
+						},
+						"path": "source/raw_gold_data"
 					},
 					"enableLogging": true,
 					"storeSettings": {
