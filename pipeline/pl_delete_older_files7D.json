@@ -34,7 +34,7 @@
 							"value": "@addDays(utcNow(),-7)",
 							"type": "Expression"
 						},
-						"wildcardFileName": ".csv",
+						"wildcardFileName": "*.csv",
 						"enablePartitionDiscovery": false
 					}
 				}
