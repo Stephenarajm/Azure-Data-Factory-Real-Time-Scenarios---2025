@@ -40,6 +40,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"oneweekclean": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "Azure Data Factory Real Time Scenarios - 2025/Scenario-4"
 		},
