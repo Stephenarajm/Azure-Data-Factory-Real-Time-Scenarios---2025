@@ -31,7 +31,7 @@
 						"type": "AzureBlobStorageReadSettings",
 						"recursive": true,
 						"modifiedDatetimeEnd": {
-							"value": "@addDays(utcNow(),-7)",
+							"value": "@addDays(utcNow(),variables('oneweekclean'))",
 							"type": "Expression"
 						},
 						"wildcardFileName": "*.csv",
@@ -42,7 +42,8 @@
 		],
 		"variables": {
 			"oneweekclean": {
-				"type": "String"
+				"type": "String",
+				"defaultValue": "-7"
 			}
 		},
 		"folder": {
