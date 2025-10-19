@@ -40,9 +40,9 @@
 				}
 			}
 		],
-		"parameters": {
+		"variables": {
 			"oneweekclean": {
-				"type": "string"
+				"type": "String"
 			}
 		},
 		"folder": {
