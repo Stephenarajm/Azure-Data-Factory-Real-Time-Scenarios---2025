@@ -42,8 +42,8 @@
 		],
 		"variables": {
 			"oneweekclean": {
-				"type": "String",
-				"defaultValue": "-7"
+				"type": "Integer",
+				"defaultValue": -7
 			}
 		},
 		"folder": {
