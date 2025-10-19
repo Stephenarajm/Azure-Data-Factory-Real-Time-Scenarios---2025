@@ -19,7 +19,9 @@
 						"referenceName": "ds_source_scenario2",
 						"type": "DatasetReference"
 					},
-					"fieldList": [],
+					"fieldList": [
+						"childItems"
+					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
 						"enablePartitionDiscovery": false
@@ -56,7 +58,7 @@
 		],
 		"variables": {
 			"filecount": {
-				"type": "String"
+				"type": "Integer"
 			}
 		},
 		"folder": {
