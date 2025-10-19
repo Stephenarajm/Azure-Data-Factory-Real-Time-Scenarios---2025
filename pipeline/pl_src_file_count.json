@@ -44,9 +44,21 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "filecount",
+					"value": {
+						"value": "@length(activity('Get Metadata1').output.childItems)",
+						"type": "Expression"
+					}
+				}
 			}
 		],
+		"variables": {
+			"filecount": {
+				"type": "String"
+			}
+		},
 		"folder": {
 			"name": "Azure Data Factory Real Time Scenarios - 2025/Scenario-5"
 		},
