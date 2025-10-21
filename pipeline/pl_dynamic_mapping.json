@@ -217,6 +217,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"cust_meta": {
+				"type": "object"
+			}
+		},
 		"folder": {
 			"name": "Azure Data Factory Real Time Scenarios - 2025/Scenario-5"
 		},
