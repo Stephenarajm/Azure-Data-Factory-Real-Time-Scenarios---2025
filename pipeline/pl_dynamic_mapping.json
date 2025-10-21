@@ -40,6 +40,152 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "date_key",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "date_key",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "date",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "year",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "month",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "month",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "day",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "day",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "day_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "day_name",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "day_of_year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "day_of_year",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "week_of_month",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "week_of_month",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "week_of_year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "week_of_year",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "month_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "month_name",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "year_month",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "year_month",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "year_week",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "year_week",
+									"type": "String",
+									"physicalType": "String"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
