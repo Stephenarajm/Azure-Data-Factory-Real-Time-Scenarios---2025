@@ -92,7 +92,7 @@
 								},
 								"enableStaging": false,
 								"translator": {
-									"value": "@if(contains(item().name,'dim'),json(pipeline().parameters.Dim_meta),json(pipeline().parameters.cust_meta))",
+									"value": "@if(contains(item().name,'dim'),json(string(pipeline().parameters.Dim_meta)),json(string(pipeline().parameters.cust_meta)))",
 									"type": "Expression"
 								}
 							},
@@ -129,11 +129,317 @@
 		"parameters": {
 			"cust_meta": {
 				"type": "string",
-				"defaultValue": "{\"type\":\"TabularTranslator\",\"mappings\":[{\"source\":{\"name\":\"Index\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"Index\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"Customer Id\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"Customer Id\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"First Name\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"First Name\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"Last Name\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"Last Name\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"Company\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"Company\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"City\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"City\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"Country\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"Country\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"Phone 1\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"Phone 1\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"Phone 2\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"Phone 2\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"Email\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"Email\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"Subscription Date\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"Subscription Date\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"Website\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"Website\",\"type\":\"String\",\"physicalType\":\"String\"}}],\"typeConversion\":true,\"typeConversionSettings\":{\"allowDataTruncation\":true,\"treatBooleanAsNumber\":false}}'"
+				"defaultValue": {
+					"type": "TabularTranslator",
+					"mappings": [
+						{
+							"source": {
+								"name": "Index",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "Index",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "Customer Id",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "Customer Id",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "First Name",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "First Name",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "Last Name",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "Last Name",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "Company",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "Company",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "City",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "City",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "Country",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "Country",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "Phone 1",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "Phone 1",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "Phone 2",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "Phone 2",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "Email",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "Email",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "Subscription Date",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "Subscription Date",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "Website",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "Website",
+								"type": "String",
+								"physicalType": "String"
+							}
+						}
+					],
+					"typeConversion": true,
+					"typeConversionSettings": {
+						"allowDataTruncation": true,
+						"treatBooleanAsNumber": false
+					}
+				}
 			},
 			"Dim_meta": {
 				"type": "string",
-				"defaultValue": "{\"type\":\"TabularTranslator\",\"mappings\":[{\"source\":{\"name\":\"date_key\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"date_key\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"date\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"date\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"year\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"year\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"month\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"month\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"day\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"day\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"day_name\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"day_name\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"day_of_year\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"day_of_year\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"week_of_month\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"week_of_month\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"week_of_year\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"week_of_year\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"month_name\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"month_name\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"year_month\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"year_month\",\"type\":\"String\",\"physicalType\":\"String\"}},{\"source\":{\"name\":\"year_week\",\"type\":\"String\",\"physicalType\":\"String\"},\"sink\":{\"name\":\"year_week\",\"type\":\"String\",\"physicalType\":\"String\"}}],\"typeConversion\":true,\"typeConversionSettings\":{\"allowDataTruncation\":true,\"treatBooleanAsNumber\":false}}'"
+				"defaultValue": {
+					"type": "TabularTranslator",
+					"mappings": [
+						{
+							"source": {
+								"name": "date_key",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "date_key",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "date",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "date",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "year",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "year",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "month",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "month",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "day",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "day",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "day_name",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "day_name",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "day_of_year",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "day_of_year",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "week_of_month",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "week_of_month",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "week_of_year",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "week_of_year",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "month_name",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "month_name",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "year_month",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "year_month",
+								"type": "String",
+								"physicalType": "String"
+							}
+						},
+						{
+							"source": {
+								"name": "year_week",
+								"type": "String",
+								"physicalType": "String"
+							},
+							"sink": {
+								"name": "year_week",
+								"type": "String",
+								"physicalType": "String"
+							}
+						}
+					],
+					"typeConversion": true,
+					"typeConversionSettings": {
+						"allowDataTruncation": true,
+						"treatBooleanAsNumber": false
+					}
+				}
 			}
 		},
 		"folder": {
