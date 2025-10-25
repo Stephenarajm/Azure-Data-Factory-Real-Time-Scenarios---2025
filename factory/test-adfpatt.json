@@ -1,0 +1,9 @@
+{
+	"name": "test-adfpatt",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8988ef2d-23d4-49f2-b4ac-053678a47f8c",
+		"tenantId": "e4b17ab4-6081-459e-a667-4c8ef9cb5271"
+	}
+}

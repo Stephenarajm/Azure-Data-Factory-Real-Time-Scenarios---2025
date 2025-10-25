@@ -66,7 +66,7 @@
 			"name": "Testing"
 		},
 		"annotations": [],
-		"lastPublishTime": "2025-10-10T07:37:10Z"
+		"lastPublishTime": "2025-10-16T16:40:58Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

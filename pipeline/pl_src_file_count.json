@@ -24,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -64,6 +65,8 @@
 		"folder": {
 			"name": "Azure Data Factory Real Time Scenarios - 2025/Scenario-5"
 		},
-		"annotations": []
-	}
+		"annotations": [],
+		"lastPublishTime": "2025-10-22T08:03:48Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
 }
