@@ -225,7 +225,8 @@
 			},
 			"mode": "Microbatch"
 		},
-		"status": "Started",
-		"allowVNetOverride": false
+		"status": "Stopped",
+		"allowVNetOverride": false,
+		"id": "4ec29a496cd1439cb9ffcb51517f4713"
 	}
 }

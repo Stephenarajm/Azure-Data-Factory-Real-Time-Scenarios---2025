@@ -43,7 +43,7 @@
 			"name": "Azure Data Factory Real Time Scenarios - 2025/Scenario-1"
 		},
 		"annotations": [],
-		"lastPublishTime": "2025-10-12T17:40:39Z"
+		"lastPublishTime": "2025-10-17T17:53:38Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

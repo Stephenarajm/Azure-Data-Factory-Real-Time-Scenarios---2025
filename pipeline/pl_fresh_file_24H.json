@@ -124,6 +124,8 @@
 		"folder": {
 			"name": "Azure Data Factory Real Time Scenarios - 2025/Scenario-3"
 		},
-		"annotations": []
-	}
+		"annotations": [],
+		"lastPublishTime": "2025-10-18T16:23:04Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
 }
